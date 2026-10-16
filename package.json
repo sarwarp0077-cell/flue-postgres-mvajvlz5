@@ -1,0 +1,27 @@
+{
+  "name": "flue-on-render",
+  "version": "1.0.0",
+  "description": "Flue agent harness framework deployed to Render — webhook-triggered AI agents with structured output and persistent sessions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "flue dev --target node --env .env",
+    "build": "flue build --target node",
+    "start": "node dist/server.mjs",
+    "run:translate": "flue run translate --target node --id local --env .env"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@flue/sdk": "^0.3.10",
+    "pg": "^8.20.0",
+    "valibot": "^1.0.0"
+  },
+  "devDependencies": {
+    "@flue/cli": "^0.3.10",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.20.0",
+    "typescript": "^5.8.0"
+  }
+}
